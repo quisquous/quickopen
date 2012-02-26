@@ -187,6 +187,7 @@ def CMDsearch(parser):
       print_results(res.filenames, False)
       return 0
   if options.only_if_exact:
+    print("FOOBAR")
     res = db.search(args[0], exact_match=True, **search_args)
     if len(res.filenames) == 1:
       print_results(res.filenames, False)
